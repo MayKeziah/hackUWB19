@@ -1,0 +1,118 @@
+/**
+ * Google Font: Lato
+ */
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+body{
+  /**
+   * Prevents overflowing off browzer window
+   */
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  /**
+   * Text color in Hex, approx light grey
+   */
+  color: #505962;
+}
+
+
+/*--- Navigation --*/
+.navbar {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  /*--- navigation bar background is black and 40% transparent, override --*/
+  background: rgba(0, 0, 0, 0.6)!important;
+}
+/*--- brand logo image on the top left --*/
+.navbar-brand img {
+  /*--- 32 pixels high --*/
+  height: 2rem;
+}
+/*--- Navigation links --*/
+.navbar-nav li {
+  /*--- spacing between links --*/
+  padding-right: .7rem;
+}
+/*--- Nav. bar links: inactive --*/
+.navbar-dark .navbar-nav .nav-link {
+  color: white; /*--- or #fff --*/
+  /*--- space above links --*/
+  padding-top: .8rem;
+}
+/*--- Nav. bar links: ACTIVE / HOVER --*/
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  /*--- active link color: approx foamy green --*/
+  color: #1ebba3;
+}
+
+/*--- Landing Page --*/
+
+.home-inner {
+  background-color: black;
+  background-image: url(img/office.png);
+}
+/*--- Welcome Message position and size --*/
+.caption {
+  width: 100%;
+  max-width: 100%;
+  /*--- We chose the position --*/
+  position: absolute;
+  /*--- position is 38% down the page --*/
+  top: 38%;
+  z-index: 1;
+  color: white;
+  /*text-transform: uppercase;*/
+}
+/*--- Wecome: heading 1 --*/
+.caption h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  text-shadow: .1rem .1rem .8rem black;
+  padding-bottom: 1rem;
+}
+
+/*--- Wecome: heading 3 --*/
+.caption h3 {
+  font-size: 2rem;
+  /*--- (vertical, horizontal, radius) --*/
+  text-shadow: .1rem .1rem .5rem black;
+  padding-bottom: 1.6rem;
+}
+
+/*--- Welcome button setting --*/
+.btn-lg {
+  border-width: medium;
+  border-radius: 0;
+  padding: .6rem 1.3rem;
+  font-size: 1.1rem;
+
+}
+/*--- 42:19 --*/
+
+
+
+
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up) **Using this one
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
